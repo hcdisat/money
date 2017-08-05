@@ -10,16 +10,7 @@ local machine for development and testing purposes.
 
 ### Installing
 
-We need to add the private repositories to our composer.json file
-
-```
-{
-  "type": "vcs",
-  "url": "git@iteam.contemporaryva.com:cva/Money.git"
-}
-```
-
-Then, add the actual package to the required object
+Add the actual package to the required object
 
 ```
 "hcdisat/monetary": "dev-master"

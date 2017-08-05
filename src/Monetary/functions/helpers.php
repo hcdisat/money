@@ -19,7 +19,7 @@ if (!function_exists('toMoney')) {
      */
     function toMoney($number, string $currency = null)
     {
-        $currency = $currency ?? config('billing.default_currency');
+        $currency = $currency ?? config('currency.default_currency');
 
         /** @var Number $cents */
         $cents = app(Number::class, [$number]);
@@ -37,7 +37,7 @@ if (!function_exists('money')) {
      */
     function money($number, string $currency = null)
     {
-        $currency = $currency ?? config('billing.default_currency');
+        $currency = $currency ?? config('currency.default_currency');
         return Money::$currency($number ?? 0);
     }
 }

@@ -1,0 +1,26 @@
+{
+    "name": "hcdisat/money",
+    "description": "Generic Domain Money and Currencies Operations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hector  Caraballo",
+            "email": "hcdisat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/Monetary/functions"
+        ],
+        "psr-4": {
+            "HcDisat\\": "src"
+        }
+    }
+}
